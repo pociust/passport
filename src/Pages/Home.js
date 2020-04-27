@@ -1,11 +1,13 @@
 import React from "react";
+import Form from "../Components/Form"
 
 
 const Home = () => {
 
   return (
-    <div>
-      hello home
+    <div className="frow-container p-10">
+      <Form></Form>
+      
     </div>
   )
 }
