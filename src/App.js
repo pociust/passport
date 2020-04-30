@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from "./Pages/Home";
 import Login from "./Pages/Login";
 
@@ -8,10 +8,10 @@ function App() {
     <>
       <Router>
         <Switch>
-          <Route exact path ="/">
+          <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route exact path ="/login">
+          <Route exact path="/login">
             <Login></Login>
           </Route>
         </Switch>
