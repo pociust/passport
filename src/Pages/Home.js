@@ -9,7 +9,7 @@ const Home = () => {
 
   const formInput = event => {
     event.preventDefault();
-    console.log('1111', event.target.value)
+    console.log('1111', event.target.value.length)
   }
 
   return (
