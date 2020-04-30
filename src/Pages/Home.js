@@ -7,6 +7,7 @@ const Home = () => {
   const [state, setState] = useState('');
 
   const formInput = event => {
+    event.preventDefault();
     console.log('1111', event.target.value)
   }
 
