@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import Form from "../Components/Form"
-import "../Styles/home.css"
+import { NavLink } from "react-router-dom";
+import Form from "../Components/Form";
+import "../Styles/home.css";
 import Strength from "../Components/Strength";
 
 
@@ -17,6 +18,8 @@ const Home = () => {
       <div>{state}</div>
       <Form formInput={formInput}></Form>
       <Strength></Strength>
+      <NavLink to="/signup">Log In</NavLink>
+
 
     </div>
   )
