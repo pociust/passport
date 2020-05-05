@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from "./Pages/Home";
+import SignIn from "./Pages/SignIn";
 import Login from "./Pages/Login";
 import Landing from "./Pages/Landing"
 
@@ -26,8 +26,8 @@ function App() {
           <Route exact path="/">
             <Landing></Landing>
           </Route>
-          <Route exact path="/home">
-            <Home></Home>
+          <Route exact path="/signin">
+            <SignIn></SignIn>
           </Route>
           <Route exact path="/login">
             <Login></Login>

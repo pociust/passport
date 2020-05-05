@@ -10,7 +10,7 @@ const Landing = () => {
 
   return (
     <React.Fragment>
-      <NavLink to="/home">Home</NavLink>
+      <NavLink to="/signin">Sign In</NavLink>
       <NavLink to="/login">Login</NavLink>
     </React.Fragment>
   )
