@@ -1,11 +1,11 @@
-import React from "react"
+import React from "react";
+import Form from '../Components/Form'
 
 
 const Login = () => {
 
   return (
-    <div>hellowlog</div>
-
+    <Form></Form>
   )
 }
 
