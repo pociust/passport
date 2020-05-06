@@ -6,7 +6,7 @@ const Form = (props) => {
       <form className="home-form" id="homeForm" onSubmit={props.formInput}>
         <input type="text" placeholder="name" name="userName"></input>
         <input type="password" placeholder="password" name="password" onChange={props.passwordStrength}></input>
-        <input type="submit"></input>
+        <button type="submit"> Submit</button>
       </form>
 
     </>
