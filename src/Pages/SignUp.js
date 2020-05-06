@@ -3,14 +3,30 @@ import { NavLink } from "react-router-dom";
 import Form from "../Components/Form";
 import "../Styles/home.css";
 import Strength from "../Components/Strength";
+import API from "../Utils/API"
 
 
 const Home = () => {
   const [state, setState] = useState('');
 
+  const submitUserInfoAPI = (user) => {
+    API.createUser(user)
+      .then(console.log('useradded'))
+      .catch(err => console.log(err))
+
+
+  }
+
+
   const formInput = (event) => {
     event.preventDefault();
-    console.log('22222', event.target.userName.value, event.target.password.value)
+    let newUser = {
+      userName: event.target.userName.value,
+      password: event.target.password.value
+    }
+
+    submitUserInfoAPI(newUser);
+
   }
 
   const passwordStrength = (event) => {
